@@ -10,3 +10,23 @@
  *      remover os elementos do array compreendidos entre os índices inicial e final. Em seguida, retorna o
  *      array atualizado.
  */
+
+class ManipulaArray{
+    array = []
+    
+    constructor(){}
+
+    adicionarElemento(elemento){
+        this.array.push(elemento)
+    }
+
+    removerUltimoElemento(){
+        const elementoRemovido = this.array.pop(elemento)
+        return elementoRemovido
+    }
+
+    removerElementosIntervalo(indiceInicial, indiceFinal){
+        this.array.slice(indiceInicial, indiceFinal)
+        return this.array
+    }
+}
