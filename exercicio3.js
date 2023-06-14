@@ -5,3 +5,11 @@
  * é um número primo. Um número primo é aquele que é divisível apenas por 1 e por ele mesmo.
  * Utiliza uma estrutura de repetição (do while) para verificar as divisões.
  */
+
+const verificaNumeroPrimo = (numero) =>{
+    if((numero % 1 == 0) && (numero % numero == 0)){
+        return true
+    }
+
+    return false
+}
