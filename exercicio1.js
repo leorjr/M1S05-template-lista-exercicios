@@ -6,3 +6,17 @@
  * adulto (18-59 anos) ou idoso (60 anos ou mais). Utiliza uma estrutura condicional
  * (if, else if, else).
  */
+
+const classificaIdade = (idade) =>{
+    if(idade < 0){
+        return 'favor informar uma idade, corretamente'
+    }else if(idade >= 0 && idade <= 12){
+        return 'criança'
+    }else if(idade >= 13 && idade <= 17){
+        return 'adolescente'
+    }else if(idade >= 18 && idade <= 59){
+        return 'adulto'
+    }else{
+        return 'idoso'
+    }
+}
